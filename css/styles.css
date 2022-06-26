@@ -840,6 +840,10 @@ footer {
   opacity: 0;
 }
 
+.checkbox:focus + .check-icons {
+  outline: 3px solid black;
+}
+
 .conditions {
   color: var(--accent-color);
 }
