@@ -649,7 +649,7 @@ footer {
   transform: translate(-50%, -50%) scale(1);
 
   width: 528px;
-  /* height: 581px; */
+  height: 581px;
   border-radius: 4px;
   padding: 40px;
 
@@ -748,6 +748,11 @@ footer {
   border-color: var(--accent-color);
 }
 
+.form-field input:focus-visible,
+.form-field textarea:focus-visible {
+  outline: 1px solid var(--accent-color);
+}
+
 .form-field input {
   padding: 12px 12px 12px 42px;
 }
@@ -801,8 +806,8 @@ footer {
   margin-bottom: 30px;
 }
 
-.checkbox {
-  appearance: none;
+.checkbox.visually-hidden {
+  transform: translateX(-202px);
 }
 
 .check-icons {
@@ -840,8 +845,11 @@ footer {
   opacity: 0;
 }
 
-.checkbox:focus + .check-icons {
-  outline: 3px solid black;
+.checkbox:focus-visible + .check-icons,
+.close:focus-visible,
+.conditions:focus-visible,
+.form > .main-button:focus-visible {
+  outline: 3px solid var(--accent-color);
 }
 
 .conditions {
