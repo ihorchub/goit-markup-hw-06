@@ -503,12 +503,6 @@ footer {
 
 .container.footer {
   display: flex;
-  align-items: baseline;
-  justify-content: end;
-}
-
-.footer-contacts {
-  margin-right: auto;
 }
 
 .logo-footer {
@@ -555,7 +549,7 @@ footer {
 }
 
 .footer-socials {
-  margin-left: 70px;
+  margin-left: 83px;
 }
 .connect {
   margin-bottom: 20px;
@@ -584,7 +578,7 @@ footer {
 }
 
 .footer-form {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .subscribe {
@@ -809,6 +803,10 @@ footer {
 .checkbox.visually-hidden {
   transform: translateX(-202px);
 }
+
+/* .checkbox {
+  appearance: none;
+} */
 
 .check-icons {
   position: relative;
